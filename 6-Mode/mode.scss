@@ -1,0 +1,128 @@
+$theme-color: rgb(255, 248, 176);
+$shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+$lower-dark :  rgb(19, 18, 18);
+
+body.dark-mode {
+    // background-color: #000000;
+    // color: #ffffff;
+
+    main {
+        #side-bar {
+            border-right: 3px solid rgb(211, 211, 211);
+            background-color: $lower-dark;
+            
+            img {
+                mix-blend-mode:normal;
+            }
+            
+            .desh-ul {
+                .desh-li {
+                    a {
+                        // color: rgb(69, 69, 69);
+                        color: $theme-color;
+
+                        i {}
+
+
+                        span {}
+
+                    }
+
+                }
+
+                .desh-li:hover {
+                    background: rgb(173, 173, 173);
+                }
+                // Hover effect on child element
+                .desh-li:hover a {
+                    color: $lower-dark;
+                }
+                
+                // *******************effect on another elemetn**************
+                // .desh-li:hover + .desh-li a {
+                //     color: rgb(2, 2, 2);
+                // }
+
+            }
+
+        }
+
+
+
+        #CEO-profile {
+
+
+            #company-logo {
+                background-color: $lower-dark;
+                color: $theme-color;
+            }
+
+            #about-corporation {
+
+                // <<<<<<<<<<<<<<<<<<-CONTAINERS->>>>>>>>>>>>>>>>
+                .container {
+                    background-color: #ffffff;
+                    box-shadow: $shadow;
+
+                    .count {
+                        transition: all 0.2s ease;
+                        font-size: 2.5vw;
+                    }
+
+                    .type {
+                        color: gray;
+                    }
+
+                    .logo img {}
+                }
+            }
+
+            // <<<<<<<<<<<<<<<<<<- EMPLOYEE-DETAINS ->>>>>>>>>>>>>>>>
+
+            #employee {
+                .employee-detail {
+                    box-shadow: $shadow;
+
+                    .employee-header {
+
+                        .btn {}
+                    }
+
+
+                    .field {
+                        border: 1px solid rgb(234, 218, 218);
+
+                        .id {}
+
+                        li {}
+
+                        .more-btn {}
+
+                        .more {}
+
+                        .field:hover {
+                            background-color: rgb(190, 185, 185);
+                        }
+                    }
+                    .pending-interview {
+
+                        .employee-header {}
+
+                        .field {
+                            background: white;
+                            border: 1px solid rgb(234, 218, 218);
+
+                            .id {}
+
+                            .department {}
+
+                            .more-btn {}
+
+                            li {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #b6fffb;
+}
+body main {
+  display: flex;
+}
+body main #side-bar {
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  background-color: rgb(247, 246, 246);
+  width: 3.8rem;
+  min-height: 100vh;
+  border-right: 3px solid rgb(211, 211, 211);
+  position: sticky;
+  top: 1px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+body main #side-bar img {
+  justify-self: center;
+  width: 90%;
+  mix-blend-mode: darken;
+}
+body main #side-bar .desh-ul {
+  padding-left: 1rem;
+  padding: 0.6rem;
+}
+body main #side-bar .desh-ul .desh-li {
+  overflow: hidden;
+  height: 2rem;
+  padding: 1.52rem 0px;
+}
+body main #side-bar .desh-ul .desh-li a {
+  width: 2.3rem;
+  color: rgb(69, 69, 69);
+  text-align: center;
+}
+body main #side-bar .desh-ul .desh-li a i {
+  width: 3rem;
+  transition: all 0.3s;
+}
+body main #side-bar .desh-ul .desh-li a i:hover {
+  font-size: 1.1rem;
+  color: black;
+}
+body main #side-bar .desh-ul .desh-li a span {
+  width: 6rem;
+  position: absolute;
+  left: 4rem;
+  transition: all 0.3s;
+  text-align: left;
+}
+body main #side-bar .desh-ul .desh-li a span:hover {
+  font-size: 1.1rem;
+  color: black;
+}
+body main #side-bar:hover {
+  width: 15rem;
+}
+@media (max-width: 600px) {
+  body main #side-bar {
+    min-width: 62px;
+  }
+  body main #side-bar:hover {
+    width: 3.8rem;
+  }
+}
+
+/*# sourceMappingURL=profile.css.map */

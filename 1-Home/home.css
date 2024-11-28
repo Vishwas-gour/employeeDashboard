@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 1.2rem;
+  padding: 0.5rem 0.5rem;
+  margin-left: 1rem;
+  background: rgb(255, 248, 176);
+}
+
+.circle {
+  position: sticky;
+  top: 10px;
+  width: 5rem;
+  height: 5rem;
+  background: #000;
+}
+
+main {
+  width: 100%;
+  display: flex;
+}
+main #side-bar {
+  text-decoration: none;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.1rem;
+  width: 3.8rem;
+  min-height: 100vh;
+  overflow: hidden;
+  width: 5rem;
+  top: 0px;
+  transition: all 0.4s ease;
+}
+main #side-bar img {
+  display: flex;
+  justify-self: center;
+  width: 90%;
+  mix-blend-mode: darken;
+  margin-bottom: 2rem;
+}
+main #side-bar .desh-ul .desh-li {
+  display: flex;
+  align-items: center;
+  margin: 1vw;
+  overflow: hidden;
+}
+main #side-bar .desh-ul .desh-li a {
+  padding: 14px 0px;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  color: rgb(69, 69, 69);
+}
+main #side-bar .desh-ul .desh-li a i {
+  margin-left: 6px;
+  width: 46px;
+  transition: all 0.3s;
+}
+main #side-bar .desh-ul .desh-li a span {
+  width: 5rem;
+  transition: all 0.3s;
+}
+main #side-bar .desh-ul .desh-li:hover {
+  color: black;
+  background: grey;
+}
+main #side-bar .logout {
+  top: 20rem;
+}
+main #side-bar:hover {
+  width: 13rem;
+}
+@media (max-width: 678px) {
+  main #side-bar {
+    font-size: 0.8rem;
+    width: 2.5rem;
+  }
+  main #side-bar .desh-ul .desh-li {
+    height: 1.5rem;
+    margin-top: 4vw;
+  }
+  main #side-bar .desh-ul .desh-li a {
+    height: 3rem;
+    align-items: left;
+  }
+  main #side-bar .desh-ul .desh-li a i {
+    margin-left: 0.3rem;
+    width: 29px;
+    transition: all 0.3s;
+  }
+  main #side-bar .desh-ul .desh-li a span {
+    width: 4rem;
+  }
+  main #side-bar:hover {
+    width: 8rem;
+  }
+}
+@media (max-width: 500px) {
+  main #side-bar {
+    font-size: 0.6rem;
+  }
+  main #side-bar .desh-ul .desh-li {
+    height: 1.4rem;
+  }
+  main #side-bar .desh-ul .desh-li a {
+    text-align: center;
+    width: 3rem;
+  }
+  main #side-bar .desh-ul .desh-li a i {
+    width: 1.3rem;
+  }
+  main #side-bar .desh-ul .desh-li a span {
+    margin-left: 1rem;
+    width: 1rem;
+  }
+  main #side-bar:hover {
+    width: 6rem;
+  }
+  main #side-bar:hover .desh-ul .desh-li a i {
+    width: 1rem;
+    margin: 0px;
+  }
+  main #side-bar:hover .desh-ul .desh-li a span {
+    margin-left: -0.6rem;
+    transition: all 0.3s;
+  }
+}
+main #CEO-profile {
+  width: 100vw;
+}
+main #CEO-profile #company-logo {
+  padding: 1rem;
+  background-color: rgb(255, 248, 176);
+  font-size: 4vw;
+  text-align: center;
+}
+main #CEO-profile #about-corporation {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+main #CEO-profile #about-corporation .container {
+  background-color: #ffffff;
+  top: 7rem;
+  height: 12vw;
+  width: 35vh;
+  padding: 1vw;
+  margin: 1vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+  border-radius: 5% 0px;
+}
+main #CEO-profile #about-corporation .container .count {
+  transition: all 0.2s ease;
+  font-size: 2.5vw;
+}
+main #CEO-profile #about-corporation .container .type {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: gray;
+  transition: all 0.1s ease;
+}
+main #CEO-profile #about-corporation .container .logo img {
+  height: 8vw;
+  transition: all 0.1s ease;
+}
+@media (max-width: 1500px) {
+  main #CEO-profile #about-corporation {
+    grid-template-columns: auto auto;
+    justify-content: center;
+  }
+  main #CEO-profile #about-corporation .container {
+    height: 14vw;
+    width: 35vw;
+  }
+  main #CEO-profile #about-corporation .container .count {
+    font-size: 3.2vw;
+  }
+  main #CEO-profile #about-corporation .container .type {
+    font-size: 2.1vw;
+  }
+  main #CEO-profile #about-corporation .container .logo img {
+    height: 10vw;
+  }
+}
+@media (max-width: 910px) {
+  main #CEO-profile #about-corporation .container .logo img {
+    height: 12vw;
+  }
+}
+@media (max-width: 700px) {
+  main #CEO-profile #about-corporation {
+    grid-template-columns: auto;
+  }
+  main #CEO-profile #about-corporation .container {
+    width: 50vw;
+    height: 14vw;
+  }
+}
+main #CEO-profile #employee {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main #CEO-profile #employee .employee-detail {
+  margin: 1rem;
+  padding: 2vw;
+  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+}
+main #CEO-profile #employee .employee-detail .employee-header {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  font-size: 2.3vw;
+  height: 7vw;
+}
+main #CEO-profile #employee .employee-detail .employee-header .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.3vw;
+  width: 15vw;
+  font-size: 1.5vw;
+}
+@media (max-width: 1000px) {
+  main #CEO-profile #employee .employee-detail .employee-header .btn {
+    height: 3.5vw;
+    width: 19vw;
+    font-size: 2vw;
+  }
+}
+main #CEO-profile #employee .employee-detail .field {
+  list-style: none;
+  display: flex;
+  border: 1px solid rgb(234, 218, 218);
+  align-items: center;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+main #CEO-profile #employee .employee-detail .field .id {
+  width: 3vw;
+  justify-content: center;
+}
+main #CEO-profile #employee .employee-detail .field li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6vw 0vw;
+  font-size: 1.2rem;
+  width: 10vw;
+  justify-content: center;
+}
+main #CEO-profile #employee .employee-detail .field .more-btn {
+  padding: 10% 0%;
+  width: 10vw;
+  height: 2vw;
+  font-size: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main #CEO-profile #employee .employee-detail .field .more {
+  display: flex;
+  justify-content: center;
+  width: 10vw;
+}
+@media (max-width: 1350px) {
+  main #CEO-profile #employee .employee-detail .field li {
+    font-size: 1.7vw;
+  }
+  main #CEO-profile #employee .employee-detail .field .Department,
+  main #CEO-profile #employee .employee-detail .field .department {
+    width: 15vw;
+  }
+  main #CEO-profile #employee .employee-detail .field .more-btn {
+    padding: 0px 1vw;
+    width: 7vw;
+    height: 2vw;
+  }
+  main #CEO-profile #employee .employee-detail .field .field {
+    width: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  main #CEO-profile #employee .employee-detail .field .id {
+    width: 8vw;
+    display: flex;
+    text-align: center;
+  }
+  main #CEO-profile #employee .employee-detail .field li {
+    font-size: 2vw;
+    width: 15vw;
+  }
+  main #CEO-profile #employee .employee-detail .field .Department,
+  main #CEO-profile #employee .employee-detail .field .department {
+    width: 19vw;
+  }
+  main #CEO-profile #employee .employee-detail .field .more {
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #CEO-profile #employee .employee-detail .field .more-btn {
+    padding: 1.5vw 4vw;
+    width: 7vw;
+    height: 2vw;
+  }
+}
+main #CEO-profile #employee .employee-detail .field:hover {
+  background-color: rgb(190, 185, 185);
+}
+@media (max-width: 1000px) {
+  main #CEO-profile #employee .employee-detail {
+    width: 80%;
+  }
+}
+main #CEO-profile #employee .pending-interview {
+  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+  padding: 2vw;
+  margin: 1rem;
+}
+main #CEO-profile #employee .pending-interview .employee-header {
+  font-size: 2.3vw;
+  height: 7vw;
+}
+main #CEO-profile #employee .pending-interview .field {
+  background: white;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgb(234, 218, 218);
+  align-items: center;
+}
+main #CEO-profile #employee .pending-interview .field .id {
+  width: 1vw;
+}
+main #CEO-profile #employee .pending-interview .field .Department,
+main #CEO-profile #employee .pending-interview .field .department {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 10vw;
+}
+main #CEO-profile #employee .pending-interview .field .more-btn {
+  padding: 10% 20%;
+  width: 5vw;
+  height: 2vw;
+  font-size: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main #CEO-profile #employee .pending-interview .field li {
+  padding: 5px;
+  font-size: 1.2rem;
+  width: 10vw;
+  text-align: center;
+}
+@media (max-width: 1350px) {
+  main #CEO-profile #employee .pending-interview .field li {
+    font-size: 1.7vw;
+  }
+  main #CEO-profile #employee .pending-interview .field .more-btn {
+    padding: 0px 1vw;
+    width: 7vw;
+    height: 2vw;
+  }
+}
+@media (max-width: 1000px) {
+  main #CEO-profile #employee .pending-interview .field .id {
+    width: 8vw;
+    display: flex;
+    text-align: center;
+  }
+  main #CEO-profile #employee .pending-interview .field li {
+    font-size: 2vw;
+    width: 15vw;
+  }
+  main #CEO-profile #employee .pending-interview .field .more {
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main #CEO-profile #employee .pending-interview .field .more-btn {
+    padding: 1.5vw 4vw;
+    width: 7vw;
+    height: 2vw;
+  }
+}
+@media (max-width: 1000px) {
+  main #CEO-profile .pending-interview {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=home.css.map */

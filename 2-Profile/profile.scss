@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background: #b6fffb;
+    main {
+        display: flex;
+
+        #side-bar {
+
+            text-decoration: none;
+            font-family: "Varela Round", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.1rem;
+
+            background-color: rgb(247, 246, 246);
+            width: 3.8rem;
+            min-height: 100vh;
+            border-right: 3px solid rgb(211, 211, 211);
+            position: sticky;
+            top: 1px;
+
+            left: 0px;
+            top: 0px;
+            bottom: 0px;
+
+            overflow: hidden;
+
+            img {
+                justify-self: center;
+                width: 90%;
+                mix-blend-mode: darken;
+            }
+
+            .desh-ul {
+                padding-left: 1rem;
+                padding: 0.6rem;
+
+
+                .desh-li {
+                    overflow: hidden;
+                    height: 2rem;
+                    padding: 1.52rem 0px;
+
+                    a {
+                        width: 2.3rem;
+                        color: rgb(69, 69, 69);
+                        text-align: center;
+
+                        i {
+                            width: 3rem;
+                            transition: all 0.3s;
+                        }
+
+                        i:hover {
+                            font-size: 1.1rem;
+                            color: black;
+                        }
+
+                        span {
+                            width: 6rem;
+                            position: absolute;
+                            left: 4rem;
+                            transition: all 0.3s;
+                            text-align: left;
+                        }
+
+                        span:hover {
+                            font-size: 1.1rem;
+                            color: black;
+                        }
+                    }
+                }
+            }
+
+            transition: all 0.4s ease;
+        }
+
+        #side-bar:hover {
+            width: 15rem;
+        }
+
+        @media(max-width:600px) {
+            #side-bar{
+                min-width: 62px;
+            }
+            #side-bar:hover {
+                width: 3.8rem;
+                
+            }
+        }
+    }
+}

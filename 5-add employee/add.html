@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../1-Home/home.css">
+        <title>Add Employee</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    </head>
+    <body>
+        <main>
+            <!-- <<<<<<<<<<<<<<-SIDE-BAR->>>>>>>>>>>>>>> -->
+            <sideBar id="side-bar">
+                <img src="../Deshboard-images/bird_2.jpg" alt="ugi">
+                <ul class="desh-ul">
+                    <li class="desh-li"><a href="..//1-Home/home.htm"><i class="fas fa-home"></i><span>Home</span></a></li>
+                    <li class="desh-li"><a href="..//2-Profile/profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
+                    <li class="desh-li"><a href="../02_display/display.html"><i class="fas fa-wallet"></i><span>Display</span></a></li>
+                
+                    <li class="desh-li"><a href="#"><i class="fas fa-cog"></i><span>Setting</span></a></li>
+                    <li class="desh-li"><a href="#"><i class="fas fa-question-circle"></i><span>Help</span></a></li>
+                    <li class="desh-li logout"><a href="..//0-login/login.html"><i class="fas fa-sign-out-alt"></i><span>Log_Out</span></a></li>
+                </ul>
+            </sideBar>
+            <article id="CEO-profile">
+                <div id="company-logo" class="logo">
+                    <samp class="name">Company-Name </samp>
+                    <span class="logo">Logo</span>
+                </div>
+                <div class="container">
+                    <form id="form" action="../4-Employee detail/detail.html" target="_blank">
+                        <div class="box">
+                            <h1>Add New Employee</h1>
+                        </div>
+                        <div class="box">
+                            <label for="name">NAME:</label>
+                            <input id="name" name="name" type="text">
+                        </div>
+                        <div class="box">
+                            <label for="department">DEPARTMENT:</label>
+                            <input id="department" name="department" type="text">
+                        </div>
+                        <div class="box">
+                            <label for="salary">SALARY</label>
+                            <input id="salary" name="salary" type="number">
+                        </div>
+                        <button type="submit" id="btn">Add</button>
+                    </form>
+                </article>
+            </div>
+        </main>
+        <script src="add.js"></script>
+    </body>
+</html>

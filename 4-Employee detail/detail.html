@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detail</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        >
+        <link rel="stylesheet" href="../1-Home/home.css">
+        <link rel="stylesheet" href="detail.css">
+    </head>
+    <body>
+        <main>
+            <sideBar id="side-bar">
+                <img src="../Deshboard-images/bird_2.jpg" alt="ugi">
+                <ul class="desh-ul field">
+                    <li class="desh-li">
+                        <a href="../1-Home/home.htm">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="desh-li">
+                        <a href="..//2-Profile/profile.html">
+                            <i class="fas fa-user"></i>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li class="desh-li">
+                        <a href="..//4-Employee detail/detail.html">
+                            <i class="fas fa-wallet"></i>
+                            <span>Members</span>
+                        </a>
+                    </li>
+                
+                    <li class="desh-li">
+                        <a href="#">
+                            <i class="fas fa-cog"></i>
+                            <span>Setting</span>
+                        </a>
+                    </li>
+                    <li class="desh-li">
+                        <a href="#">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help</span>
+                        </a>
+                    </li>
+                    <li class="desh-li logout">
+                        <a href="../0-login/login.html">
+                            <i class="fas fa-sign-out-alt"></i>
+                            <span>Log_Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </sideBar>
+            <!-- ===============< DETAILS >==================== -->
+            <article id="CEO-profile" class="detail">
+                <div id="company-logo" class="logo">
+                    <samp class="name">Company-Name</samp>
+                    <span class="logo">Logo</span>
+                </div>
+                <!-- ===============< CRUD >==================== -->
+                <article id="crud">
+                    <button id="addBtn" class="btn">
+                        <a href="../5-add employee/add.html">Add Employee</a>
+                    </button>
+                    <button id="updateBtn" class="btn">
+                        <a href="">Update Data</a>
+                    </button>
+                    <button id="deleteBtn" class="btn">
+                        <a href="">Remove Employee</a>
+                    </button>
+                    <button id="saveBtn" class="btn">
+                        <a href="">Save Changes</a>
+                    </button>
+                </article>
+                <article id="employee">
+                    <form id="form" class="employee-detail ">
+                        <ul class="heading field">
+                            <li class="d_sno">
+                                <b>S no.</b>
+                            </li>
+                            <li class="d_id">
+                                <b>Id</b>
+                            </li>
+                            <li class="d_name">
+                                <b>Name</b>
+                            </li>
+                            <li class="d_department">
+                                <b>Department</b>
+                            </li>
+                            <li class="d_salary">
+                                <b>Salary</b>
+                            </li>
+                        </ul>
+                    </form>
+                </article>
+            </article>
+        </main>
+        <script src="detail.js"></script>
+    </body>
+</html>

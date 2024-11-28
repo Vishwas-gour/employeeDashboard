@@ -1,0 +1,32 @@
+{
+  "employee1": [
+    {
+      "sno": "2",
+      "id": "016",
+      "name": "Vishwas",
+      "salary": "870000",
+      "department": "DSA-va"
+    },
+    {
+      "sno": "3",
+      "id": "176",
+      "name": "Vishwas",
+      "salary": "50000",
+      "department": "pYTHON"
+    },
+    {
+      "id": "01",
+      "sno": 4,
+      "name": "Vishwas Gour ",
+      "department": "DSA-Java",
+      "salary": "9000000"
+    },
+    {
+      "id": "668a",
+      "sno": 5,
+      "name": "Vishwas",
+      "department": "JAVA",
+      "salary": "200000"
+    }
+  ]
+}
