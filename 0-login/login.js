@@ -15,6 +15,8 @@ function login(e) {
         return;
     }
     else if (email != localStorage.email || password != localStorage.password) {
+        e.preventDefault();
+        console.log(localStorage.email,localStorage.password)
         let result = confirm("user have't account you want to create");
         if (result)window.location.href = "registration.html";
         else return;

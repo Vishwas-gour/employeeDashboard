@@ -5,14 +5,14 @@
       "id": "016",
       "name": "Vishwas",
       "salary": "870000",
-      "department": "DSA-va"
+      "department": "DS-va"
     },
     {
       "sno": "3",
       "id": "176",
       "name": "Vishwas",
       "salary": "50000",
-      "department": "pYTHON"
+      "department": "hnm"
     },
     {
       "id": "01",
@@ -27,6 +27,20 @@
       "name": "Vishwas",
       "department": "JAVA",
       "salary": "200000"
+    },
+    {
+      "id": "8088",
+      "sno": 5,
+      "name": "wer",
+      "department": "wer",
+      "salary": "4234"
+    },
+    {
+      "id": "a823",
+      "sno": 6,
+      "name": "234",
+      "department": "234",
+      "salary": "234"
     }
   ]
 }

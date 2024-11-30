@@ -17,14 +17,20 @@ main .detail {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
+  overflow: hidden;
 }
 main .detail #crud {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
   justify-content: center;
   padding: 0.5rem;
   margin: 1vw;
   background: gainsboro;
+}
+main .detail #crud .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .detail #employee #form {
   height: 45rem;
@@ -50,7 +56,6 @@ main .detail #employee #form .field li input {
   text-align: center;
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
   border: none;
   border-radius: 10px;
 }
@@ -59,6 +64,39 @@ main .detail #employee #form .field .d_sno {
 }
 main .detail #employee #form .field .d_id {
   width: 10rem;
+}
+@media (max-width: 880px) {
+  main .detail #crud {
+    grid-template-columns: auto auto;
+  }
+  main .detail #crud .btn {
+    font-size: 2.3vw;
+    margin: 1vw;
+    width: 25vw;
+    padding: 1vw;
+  }
+  main .detail #employee #form {
+    height: 45rem;
+    padding: 1rem;
+  }
+  main .detail #employee #form .field li {
+    margin-top: 2rem;
+  }
+  main .detail #employee #form .field li input {
+    font-size: 2vw;
+  }
+  main .detail #employee #form .field .d_sno {
+    width: 10vw;
+  }
+  main .detail #employee #form .field .d_id {
+    width: 15vw;
+  }
+  main .detail #employee #form .field .d_name {
+    width: 25vw;
+  }
+  main .detail #employee #form .field .d_department {
+    width: 20vw;
+  }
 }
 
 /*# sourceMappingURL=detail.css.map */

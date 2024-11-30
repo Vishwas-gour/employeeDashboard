@@ -25,14 +25,21 @@ main {
         display: grid;
         grid-template-columns: auto;
         justify-content: center;
+        overflow: hidden;
 
         #crud {
-            display: flex;
-            flex-wrap: wrap;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
             justify-content: center;
             padding: 0.5rem;
             margin: 1vw;
             background: gainsboro;
+            // background: rgb(138, 26, 26);
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
         }
 
@@ -63,7 +70,6 @@ main {
                             text-align: center;
                             width: 90%;
                             display: flex;
-                            flex-wrap: wrap;
                             border: none;
                             border-radius: 10px;
                         }
@@ -83,5 +89,53 @@ main {
 
             }
         }
+    }
+
+    @media (max-width : 880px) {
+        // background-color: rgb(217, 217, 217);
+        .detail {
+            // <<<<<<<<<<< CRUD OPRATIONS >>>>>>>>>>>
+         
+
+            #crud {
+             grid-template-columns: auto auto;
+                .btn {
+                    font-size: 2.3vw;
+                    margin: 1vw;
+                    width: 25vw;
+                    padding: 1vw;
+                    
+                }
+            }
+            #employee {
+                #form {
+                    height: 45rem;
+                    padding: 1rem;
+                    .field {
+                        li {
+                        margin-top: 2rem;
+                            input {
+                               font-size: 2vw;
+                            }
+                        }
+                        .d_sno {
+                          width: 10vw;
+                        }
+                        .d_id {
+                            width: 15vw;
+                        }
+                        .d_name{
+                            width: 25vw;
+                        }
+                        .d_department{
+                            width: 20vw;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
     }
 }

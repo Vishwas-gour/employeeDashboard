@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .btn {
@@ -27,7 +28,6 @@ a {
 }
 
 main {
-  width: 100%;
   display: flex;
 }
 main #side-bar {
@@ -36,10 +36,10 @@ main #side-bar {
   font-weight: 600;
   font-style: normal;
   font-size: 1.1rem;
-  width: 3.8rem;
   min-height: 100vh;
+  border-right: 3px solid rgb(211, 211, 211);
   overflow: hidden;
-  width: 5rem;
+  width: 4rem;
   top: 0px;
   transition: all 0.4s ease;
 }
@@ -53,22 +53,31 @@ main #side-bar img {
 main #side-bar .desh-ul .desh-li {
   display: flex;
   align-items: center;
-  margin: 1vw;
+  margin-top: 2rem;
   overflow: hidden;
+  height: 3rem;
 }
 main #side-bar .desh-ul .desh-li a {
-  padding: 14px 0px;
+  height: 100%;
   display: grid;
   grid-template-columns: auto auto;
   align-items: center;
-  color: rgb(69, 69, 69);
+  margin-left: 10px;
 }
 main #side-bar .desh-ul .desh-li a i {
-  margin-left: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-right: 1vw;
   width: 46px;
   transition: all 0.3s;
 }
 main #side-bar .desh-ul .desh-li a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   width: 5rem;
   transition: all 0.3s;
 }
@@ -83,28 +92,18 @@ main #side-bar:hover {
   width: 13rem;
 }
 @media (max-width: 678px) {
-  main #side-bar {
-    font-size: 0.8rem;
-    width: 2.5rem;
-  }
   main #side-bar .desh-ul .desh-li {
-    height: 1.5rem;
-    margin-top: 4vw;
-  }
-  main #side-bar .desh-ul .desh-li a {
-    height: 3rem;
-    align-items: left;
+    height: 4rem;
   }
   main #side-bar .desh-ul .desh-li a i {
-    margin-left: 0.3rem;
-    width: 29px;
-    transition: all 0.3s;
+    width: 40px;
+    font-size: 1rem;
   }
   main #side-bar .desh-ul .desh-li a span {
-    width: 4rem;
+    font-size: 1rem;
   }
   main #side-bar:hover {
-    width: 8rem;
+    width: 15rem;
   }
 }
 @media (max-width: 500px) {
@@ -112,33 +111,30 @@ main #side-bar:hover {
     font-size: 0.6rem;
   }
   main #side-bar .desh-ul .desh-li {
-    height: 1.4rem;
+    height: 2rem;
   }
   main #side-bar .desh-ul .desh-li a {
     text-align: center;
-    width: 3rem;
-  }
-  main #side-bar .desh-ul .desh-li a i {
-    width: 1.3rem;
-  }
-  main #side-bar .desh-ul .desh-li a span {
-    margin-left: 1rem;
-    width: 1rem;
   }
   main #side-bar:hover {
-    width: 6rem;
+    width: 19rem;
+  }
+  main #side-bar:hover .desh-ul .desh-li a {
+    margin-left: 0.5rem;
   }
   main #side-bar:hover .desh-ul .desh-li a i {
+    font-size: 0.8rem;
     width: 1rem;
-    margin: 0px;
   }
   main #side-bar:hover .desh-ul .desh-li a span {
-    margin-left: -0.6rem;
-    transition: all 0.3s;
+    font-size: 0.8rem;
+    width: 3.5rem;
   }
 }
 main #CEO-profile {
   width: 100vw;
+  /* background-color: aqua;
+   */
 }
 main #CEO-profile #company-logo {
   padding: 1rem;
@@ -218,7 +214,7 @@ main #CEO-profile #employee {
   justify-content: space-evenly;
 }
 main #CEO-profile #employee .employee-detail {
-  margin: 1rem;
+  margin: 1rem 0px;
   padding: 2vw;
   box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
 }

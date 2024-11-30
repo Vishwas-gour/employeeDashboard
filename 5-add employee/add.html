@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="add.css">
         <link rel="stylesheet" href="../1-Home/home.css">
         <title>Add Employee</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -20,7 +20,7 @@
                 <ul class="desh-ul">
                     <li class="desh-li"><a href="..//1-Home/home.htm"><i class="fas fa-home"></i><span>Home</span></a></li>
                     <li class="desh-li"><a href="..//2-Profile/profile.html"><i class="fas fa-user"></i><span>Profile</span></a></li>
-                    <li class="desh-li"><a href="../02_display/display.html"><i class="fas fa-wallet"></i><span>Display</span></a></li>
+                    <li class="desh-li"><a href="..//4-Employee detail/detail.html"><i class="fas fa-wallet"></i><span>Members</span></a></li>
                 
                     <li class="desh-li"><a href="#"><i class="fas fa-cog"></i><span>Setting</span></a></li>
                     <li class="desh-li"><a href="#"><i class="fas fa-question-circle"></i><span>Help</span></a></li>
@@ -33,10 +33,9 @@
                     <span class="logo">Logo</span>
                 </div>
                 <div class="container">
-                    <form id="form" action="../4-Employee detail/detail.html" target="_blank">
-                        <div class="box">
-                            <h1>Add New Employee</h1>
-                        </div>
+                    <form id="form" action="../4-Employee detail/detail.html" >
+                        <h1>Add New Employee</h1>
+                        
                         <div class="box">
                             <label for="name">NAME:</label>
                             <input id="name" name="name" type="text">
@@ -49,7 +48,9 @@
                             <label for="salary">SALARY</label>
                             <input id="salary" name="salary" type="number">
                         </div>
-                        <button type="submit" id="btn">Add</button>
+                        <div class="box btnbox">
+                            <button type="submit" id="btn">Login</button>
+                        </div>
                     </form>
                 </article>
             </div>

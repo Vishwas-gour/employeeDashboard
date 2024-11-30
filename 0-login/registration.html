@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="..//5-add employee/add.css" />
+    <style>
+    body{
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
     <title>registration</title>
   </head>
   <body>
@@ -21,13 +29,15 @@
         </div>
         <div class="box">
           <label for="password">Password:</label>
-          <input id="password" name="password" type="password" />
+          <input id="password" name="password" type="password"/>
         </div>
         <div class="box">
-          <label for="password">Confirm Password:</label>
+          <label for="psw">Confirm Password:</label>
           <input id="psw" name="psw" type="password" />
         </div>
-        <button type="submit" id="btn">Register Now</button>
+        <div class="box btnbox">
+          <button type="submit" id="btn">Login</button>
+      </div>
       </form>
     </div>
     <script src="registration.js"></script>
