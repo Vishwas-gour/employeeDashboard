@@ -1,5 +1,6 @@
 // localStorage.clear();
 document.getElementById("btn").addEventListener("click", add);
+
 function add(e) {
     e.preventDefault();
     let username = document.getElementById("username").value;
@@ -21,5 +22,11 @@ function add(e) {
 
     alert("registration successfull");
 
-
 }
+
+
+let verify = document.getElementsByClassName("otp-button");
+console.log(ver)
+verify.addEventListener('click', function() {
+ alert('Element clicked!');
+});

@@ -15,6 +15,7 @@ addbtn.addEventListener("click", async (e) => {
     let data = await (await obj).json();
     // JSON LENGTH***************************** 
     let sno = Object.keys(data).length + 1;
+    // takeing data from form input
     let id;
     let name = document.querySelector("#name").value;
     let department = document.querySelector("#department").value;

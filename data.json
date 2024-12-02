@@ -15,20 +15,6 @@
       "department": "hnm"
     },
     {
-      "id": "01",
-      "sno": 4,
-      "name": "Vishwas Gour ",
-      "department": "DSA-Java",
-      "salary": "9000000"
-    },
-    {
-      "id": "668a",
-      "sno": 5,
-      "name": "Vishwas",
-      "department": "JAVA",
-      "salary": "200000"
-    },
-    {
       "id": "8088",
       "sno": 5,
       "name": "wer",
@@ -41,6 +27,13 @@
       "name": "234",
       "department": "234",
       "salary": "234"
+    },
+    {
+      "id": "fd50",
+      "sno": 7,
+      "name": "123",
+      "department": "123",
+      "salary": "123"
     }
   ]
 }

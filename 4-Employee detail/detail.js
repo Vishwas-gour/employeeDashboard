@@ -74,14 +74,14 @@ updateBtn.addEventListener("click", async (e) => {
         let urlId = `http://localhost:3000/employee1/${id}`;
         // console.log("url-id", urlId);
 
-        if (id != `d_department-${parentId}` && id != `d_salary-${parentId}`) {
+        if (id != `d_department-${parentId}` &&  id != `d_salary-${parentId}`) {
             alert("you could only change department and salary");
             return;
         }
         // ---------> remove attribute
         let target = document.getElementById(`${id}`).removeAttribute("readonly");
         let value = document.getElementById(`${id}`).value;
-        let check = value;
+
         console.log("value is -->", value)
         // ---------> BY KEY PRESS EVENT
         window.addEventListener("keypress", (e) => {
@@ -105,7 +105,8 @@ updateBtn.addEventListener("click", async (e) => {
 
 async function recDel(id) {
     let urlId = `http://localhost:3000/employee1/${id}`;
-
+    
+ 
     let responseObj = await fetch(urlId, {
         method: "DELETE",
     });
@@ -118,8 +119,13 @@ async function recDel(id) {
 
 deleteBtn.addEventListener("click", (e) => {
     e.preventDefault()
-    alert("click the member that you want to Remove");
+    
+    alert("click the member you want to Remove");
     form.addEventListener("click", async (e) => { 
+        let yesNo = confirm("Confirm to remove current Member")
+        if(!yesNo){
+          return;
+        }
         let parentId = e.target.closest(".field").id;
         recDel(parentId);
 

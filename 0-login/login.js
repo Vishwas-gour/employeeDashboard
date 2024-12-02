@@ -23,6 +23,6 @@ function login(e) {
     }
     else {
         alert("congratulation you are succesfuly log in ")
-        window.location.href = "../1-Home/home.htm";
+        window.location.href = "../index.html";
     }
 }
