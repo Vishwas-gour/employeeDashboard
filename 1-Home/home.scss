@@ -28,10 +28,14 @@ a {
 }
 
 
-
+body{
+    overflow-y: scroll;
+    height: 10vh;
+}
 
 main {
     display: flex;
+  
 
     #side-bar {
         text-decoration: none;
@@ -39,11 +43,12 @@ main {
         font-weight: 600;
         font-style: normal;
         font-size: 1.1rem;
-        min-height: 100vh;
+        max-height: 100vh;
         border-right: 3px solid rgb(211, 211, 211);
         overflow: hidden;
         width: 4rem;
-        top: 0px;
+
+        overflow-y: hidden;
 
         img {
             display: flex;
@@ -194,7 +199,11 @@ main {
 
 
     #CEO-profile {
+        overflow-y: scroll;
+        height: 100vh;
+        scrollbar-width: none;
         width: 100vw;
+        margin: 1rem;
 
         #company-logo {
             padding: 1rem;
@@ -241,12 +250,15 @@ main {
                     height: 8vw;
                     transition: all 0.1s ease;
                 }
+
                 transition: all 0.3s ease;
 
             }
-            .container:hover{
+
+            .container:hover {
                 margin-top: 0px;
                 scale: 1.05;
+
             }
         }
 
@@ -316,14 +328,7 @@ main {
                     font-size: 2.3vw;
                     height: 7vw;
 
-                    .btn {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 3.3vw;
-                        width: 15vw;
-                        font-size: 1.5vw;
-                    }
+
                 }
 
                 @media (max-width:1000px) {
@@ -363,7 +368,7 @@ main {
 
                     .more-btn {
                         padding: 10% 0%;
-                        width: 10vw;
+                        width: 7vw;
                         height: 2vw;
                         font-size: 95%;
                         display: flex;
@@ -406,8 +411,6 @@ main {
                     @media (max-width:1000px) {
                         .id {
                             width: 8vw;
-                            display: flex;
-                            text-align: center;
                         }
 
                         li {
@@ -415,7 +418,6 @@ main {
                             width: 15vw;
                         }
 
-                        .Department,
                         .department {
                             width: 19vw;
                         }
@@ -452,13 +454,22 @@ main {
 
             .pending-interview {
 
-                box-shadow: $shadow;
+                margin: 1rem 0px;
                 padding: 2vw;
-                margin: 1rem;
+                box-shadow: $shadow;
 
                 .employee-header {
                     font-size: 2.3vw;
                     height: 7vw;
+                }
+
+                li {
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding: 0.6vw 0vw;
+                    font-size: 1.2rem;
+                    width: 10vw;
+                    justify-content: center;
                 }
 
                 .field {
@@ -468,13 +479,22 @@ main {
                     justify-content: center;
                     border: 1px solid rgb(234, 218, 218);
                     align-items: center;
+                    transition: all 0.3s ease;
 
 
                     .id {
-                        width: 1vw;
+                        width: 3vw;
+                        justify-content: center;
                     }
 
-                    .Department,
+                    .profile {
+                        width: 8vw;
+
+                        img {
+                            width: 30%;
+                        }
+                    }
+
                     .department {
                         display: flex;
                         align-items: center;
@@ -494,7 +514,7 @@ main {
                     }
 
                     li {
-                        padding: 5px;
+                        padding: 0.6vw 0vw;
                         font-size: 1.2rem;
                         width: 10vw;
                         text-align: center;
@@ -517,9 +537,13 @@ main {
 
                     @media (max-width:1000px) {
                         .id {
-                            width: 8vw;
+                            width: 5vw;
                             display: flex;
                             text-align: center;
+                        }
+
+                        .profile {
+                            width: 14vw;
                         }
 
                         li {
@@ -548,7 +572,7 @@ main {
 
         @media (max-width:1000px) {
             .pending-interview {
-                width: 80%;
+                width: 70%;
             }
         }
 

@@ -18,6 +18,11 @@ a {
   background: rgb(255, 248, 176);
 }
 
+body {
+  overflow-y: scroll;
+  height: 10vh;
+}
+
 main {
   display: flex;
 }
@@ -27,11 +32,11 @@ main #side-bar {
   font-weight: 600;
   font-style: normal;
   font-size: 1.1rem;
-  min-height: 100vh;
+  max-height: 100vh;
   border-right: 3px solid rgb(211, 211, 211);
   overflow: hidden;
   width: 4rem;
-  top: 0px;
+  overflow-y: hidden;
   transition: all 0.4s ease;
 }
 main #side-bar img {
@@ -122,7 +127,11 @@ main #side-bar:hover {
   }
 }
 main #CEO-profile {
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none;
   width: 100vw;
+  margin: 1rem;
 }
 main #CEO-profile #company-logo {
   padding: 1rem;
@@ -219,14 +228,6 @@ main #CEO-profile #employee .employee-detail .employee-header {
   font-size: 2.3vw;
   height: 7vw;
 }
-main #CEO-profile #employee .employee-detail .employee-header .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 3.3vw;
-  width: 15vw;
-  font-size: 1.5vw;
-}
 @media (max-width: 1000px) {
   main #CEO-profile #employee .employee-detail .employee-header .btn {
     height: 3.5vw;
@@ -256,7 +257,7 @@ main #CEO-profile #employee .employee-detail .field li {
 }
 main #CEO-profile #employee .employee-detail .field .more-btn {
   padding: 10% 0%;
-  width: 10vw;
+  width: 7vw;
   height: 2vw;
   font-size: 95%;
   display: flex;
@@ -289,14 +290,11 @@ main #CEO-profile #employee .employee-detail .field .more {
 @media (max-width: 1000px) {
   main #CEO-profile #employee .employee-detail .field .id {
     width: 8vw;
-    display: flex;
-    text-align: center;
   }
   main #CEO-profile #employee .employee-detail .field li {
     font-size: 2vw;
     width: 15vw;
   }
-  main #CEO-profile #employee .employee-detail .field .Department,
   main #CEO-profile #employee .employee-detail .field .department {
     width: 19vw;
   }
@@ -321,13 +319,21 @@ main #CEO-profile #employee .employee-detail .field:hover {
   }
 }
 main #CEO-profile #employee .pending-interview {
-  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+  margin: 1rem 0px;
   padding: 2vw;
-  margin: 1rem;
+  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
 }
 main #CEO-profile #employee .pending-interview .employee-header {
   font-size: 2.3vw;
   height: 7vw;
+}
+main #CEO-profile #employee .pending-interview li {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6vw 0vw;
+  font-size: 1.2rem;
+  width: 10vw;
+  justify-content: center;
 }
 main #CEO-profile #employee .pending-interview .field {
   list-style: none;
@@ -335,11 +341,18 @@ main #CEO-profile #employee .pending-interview .field {
   justify-content: center;
   border: 1px solid rgb(234, 218, 218);
   align-items: center;
+  transition: all 0.3s ease;
 }
 main #CEO-profile #employee .pending-interview .field .id {
-  width: 1vw;
+  width: 3vw;
+  justify-content: center;
 }
-main #CEO-profile #employee .pending-interview .field .Department,
+main #CEO-profile #employee .pending-interview .field .profile {
+  width: 8vw;
+}
+main #CEO-profile #employee .pending-interview .field .profile img {
+  width: 30%;
+}
 main #CEO-profile #employee .pending-interview .field .department {
   display: flex;
   align-items: center;
@@ -357,7 +370,7 @@ main #CEO-profile #employee .pending-interview .field .more-btn {
   text-align: center;
 }
 main #CEO-profile #employee .pending-interview .field li {
-  padding: 5px;
+  padding: 0.6vw 0vw;
   font-size: 1.2rem;
   width: 10vw;
   text-align: center;
@@ -374,9 +387,12 @@ main #CEO-profile #employee .pending-interview .field li {
 }
 @media (max-width: 1000px) {
   main #CEO-profile #employee .pending-interview .field .id {
-    width: 8vw;
+    width: 5vw;
     display: flex;
     text-align: center;
+  }
+  main #CEO-profile #employee .pending-interview .field .profile {
+    width: 14vw;
   }
   main #CEO-profile #employee .pending-interview .field li {
     font-size: 2vw;
@@ -396,7 +412,7 @@ main #CEO-profile #employee .pending-interview .field li {
 }
 @media (max-width: 1000px) {
   main #CEO-profile .pending-interview {
-    width: 80%;
+    width: 70%;
   }
 }
 
