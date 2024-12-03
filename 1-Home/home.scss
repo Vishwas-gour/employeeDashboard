@@ -34,16 +34,11 @@ main {
     display: flex;
 
     #side-bar {
-
         text-decoration: none;
         font-family: "Varela Round", sans-serif;
         font-weight: 600;
         font-style: normal;
         font-size: 1.1rem;
-
-
-
-
         min-height: 100vh;
         border-right: 3px solid rgb(211, 211, 211);
         overflow: hidden;
@@ -54,9 +49,8 @@ main {
             display: flex;
             justify-self: center;
             width: 90%;
-            mix-blend-mode: darken;
-            margin-bottom: 2rem;
-            // position: sticky;
+            margin: 1rem 0rem;
+
         }
 
         .desh-ul {
@@ -95,7 +89,7 @@ main {
                         align-items: center;
                         height: 100%;
                         width: 5rem;
-                        
+
 
                         transition: all 0.3s;
                     }
@@ -158,7 +152,7 @@ main {
 
             .desh-ul {
                 .desh-li {
-height: 2rem;
+                    height: 2rem;
 
                     a {
                         text-align: center;
@@ -178,6 +172,7 @@ height: 2rem;
                 .desh-li {
                     a {
                         margin-left: 0.5rem;
+
                         i {
                             font-size: 0.8rem;
                             width: 1rem;
@@ -201,8 +196,6 @@ height: 2rem;
     #CEO-profile {
         width: 100vw;
 
-        background-color: aqua;
-
         #company-logo {
             padding: 1rem;
             background-color: $theme-color;
@@ -214,6 +207,7 @@ height: 2rem;
             display: grid;
             grid-template-columns: auto auto auto auto;
             justify-content: center;
+            padding: 1rem;
 
             // <<<<<<<<<<<<<<<<<<-CONTAINERS->>>>>>>>>>>>>>>>
             .container {
@@ -247,6 +241,12 @@ height: 2rem;
                     height: 8vw;
                     transition: all 0.1s ease;
                 }
+                transition: all 0.3s ease;
+
+            }
+            .container:hover{
+                margin-top: 0px;
+                scale: 1.05;
             }
         }
 
@@ -462,7 +462,7 @@ height: 2rem;
                 }
 
                 .field {
-                    background: white;
+                    // background: white;
                     list-style: none;
                     display: flex;
                     justify-content: center;

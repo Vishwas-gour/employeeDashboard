@@ -1,46 +1,38 @@
-body.dark-mode main #side-bar {
-  border-right: 3px solid rgb(211, 211, 211);
-  background-color: rgb(19, 18, 18);
+body.dark-mode #side-bar {
+  background-color: #121212;
+  color: white;
 }
-body.dark-mode main #side-bar img {
-  mix-blend-mode: normal;
+body.dark-mode #CEO-profile #company-logo {
+  background-color: rgb(180, 160, 90);
+  color: #1E1E1E;
 }
-body.dark-mode main #side-bar .desh-ul .desh-li a {
-  color: rgb(255, 248, 176);
+body.dark-mode #CEO-profile #about-corporation {
+  background-color: #1a1a1a;
 }
-body.dark-mode main #side-bar .desh-ul .desh-li:hover {
-  background: rgb(173, 173, 173);
+body.dark-mode #CEO-profile #about-corporation .container {
+  background-color: #1E1E1E;
+  box-shadow: 5px 4px 25px 0px rgb(0, 0, 0);
 }
-body.dark-mode main #side-bar .desh-ul .desh-li:hover a {
-  color: rgb(19, 18, 18);
+body.dark-mode #CEO-profile #about-corporation .container .count {
+  color: wheat;
 }
-body.dark-mode main #CEO-profile #company-logo {
-  background-color: rgb(19, 18, 18);
-  color: rgb(255, 248, 176);
+body.dark-mode #CEO-profile #about-corporation .container .type {
+  color: rgb(155, 153, 153);
 }
-body.dark-mode main #CEO-profile #about-corporation .container {
-  background-color: #ffffff;
-  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
+body.dark-mode #CEO-profile #employee {
+  background-color: #1a1a1a;
 }
-body.dark-mode main #CEO-profile #about-corporation .container .count {
-  transition: all 0.2s ease;
-  font-size: 2.5vw;
+body.dark-mode #CEO-profile #employee .employee-detail {
+  box-shadow: 5px 4px 25px 0px rgb(0, 0, 0);
 }
-body.dark-mode main #CEO-profile #about-corporation .container .type {
-  color: gray;
-}
-body.dark-mode main #CEO-profile #employee .employee-detail {
-  box-shadow: 5px 4px 25px 0px rgb(188, 188, 188);
-}
-body.dark-mode main #CEO-profile #employee .employee-detail .field {
+body.dark-mode #CEO-profile #employee .employee-detail .field {
   border: 1px solid rgb(234, 218, 218);
 }
-body.dark-mode main #CEO-profile #employee .employee-detail .field .field:hover {
+body.dark-mode #CEO-profile #employee .employee-detail .field .field:hover {
   background-color: rgb(190, 185, 185);
 }
-body.dark-mode main #CEO-profile #employee .employee-detail .pending-interview .field {
-  background: white;
-  border: 1px solid rgb(234, 218, 218);
+body.dark-mode #CEO-profile #employee .employee-detail .pending-interview {
+  box-shadow: 10px 10px 10px 10px red;
 }
 
 /*# sourceMappingURL=mode.css.map */
