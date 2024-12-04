@@ -8,6 +8,7 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .btn {
@@ -66,6 +67,7 @@ main #side-bar .desh-ul .desh-li a i {
   height: 100%;
   margin-right: 1vw;
   width: 46px;
+  color: black;
   transition: all 0.3s;
 }
 main #side-bar .desh-ul .desh-li a span {
@@ -74,6 +76,7 @@ main #side-bar .desh-ul .desh-li a span {
   align-items: center;
   height: 100%;
   width: 5rem;
+  color: black;
   transition: all 0.3s;
 }
 main #side-bar .desh-ul .desh-li:hover {
@@ -112,7 +115,7 @@ main #side-bar:hover {
     text-align: center;
   }
   main #side-bar:hover {
-    width: 19rem;
+    width: 9rem;
   }
   main #side-bar:hover .desh-ul .desh-li a {
     margin-left: 0.5rem;
@@ -131,7 +134,6 @@ main #CEO-profile {
   height: 100vh;
   scrollbar-width: none;
   width: 100vw;
-  margin: 1rem;
 }
 main #CEO-profile #company-logo {
   padding: 1rem;
@@ -227,6 +229,14 @@ main #CEO-profile #employee .employee-detail .employee-header {
   justify-content: space-evenly;
   font-size: 2.3vw;
   height: 7vw;
+  background-color: rgb(255, 248, 176);
+  color: rgb(14, 14, 14);
+}
+main #CEO-profile #employee .employee-detail .btn {
+  transition: all 0.3s ease;
+}
+main #CEO-profile #employee .employee-detail .btn:hover {
+  margin-left: -1vw;
 }
 @media (max-width: 1000px) {
   main #CEO-profile #employee .employee-detail .employee-header .btn {
@@ -311,7 +321,8 @@ main #CEO-profile #employee .employee-detail .field .more {
   }
 }
 main #CEO-profile #employee .employee-detail .field:hover {
-  background-color: rgb(190, 185, 185);
+  background: #bcbcbc;
+  scale: 1.04;
 }
 @media (max-width: 1000px) {
   main #CEO-profile #employee .employee-detail {
@@ -326,6 +337,8 @@ main #CEO-profile #employee .pending-interview {
 main #CEO-profile #employee .pending-interview .employee-header {
   font-size: 2.3vw;
   height: 7vw;
+  background-color: rgb(255, 248, 176);
+  color: rgb(14, 14, 14);
 }
 main #CEO-profile #employee .pending-interview li {
   display: flex;
@@ -375,6 +388,12 @@ main #CEO-profile #employee .pending-interview .field li {
   width: 10vw;
   text-align: center;
 }
+main #CEO-profile #employee .pending-interview .field .btn {
+  transition: all 0.3s ease;
+}
+main #CEO-profile #employee .pending-interview .field .btn:hover {
+  margin-left: -1vw;
+}
 @media (max-width: 1350px) {
   main #CEO-profile #employee .pending-interview .field li {
     font-size: 1.7vw;
@@ -409,6 +428,10 @@ main #CEO-profile #employee .pending-interview .field li {
     width: 7vw;
     height: 2vw;
   }
+}
+main #CEO-profile #employee .pending-interview .field:hover {
+  background: #bcbcbc;
+  scale: 1.04;
 }
 @media (max-width: 1000px) {
   main #CEO-profile .pending-interview {

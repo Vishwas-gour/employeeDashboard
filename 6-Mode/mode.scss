@@ -1,4 +1,4 @@
-$shadow : 5px 4px 25px 0px rgb(0, 0, 0);
+$dark-shadow : 5px 4px 25px 0px rgb(0, 0, 0);
 
 body.dark-mode {
     background-color: #121212;
@@ -6,6 +6,25 @@ body.dark-mode {
     #side-bar {
         background-color: #121212;
         color: #E0E0E0;
+
+        .desh-ul {
+            .desh-li {
+
+                a {
+
+                    i {
+                        color: wheat;
+                    }
+
+
+                    span {
+                        color: wheat;
+                    }
+
+                }
+            }
+        }
+
         border-right: 3px solid rgb(0, 0, 0);
 
         .desh-li:hover {
@@ -27,7 +46,7 @@ body.dark-mode {
             .container {
                 background-color: #232020;
 
-                box-shadow: $shadow;
+                box-shadow: $dark-shadow;
 
                 .count {
                     color: wheat;
@@ -53,16 +72,21 @@ body.dark-mode {
             .employee-detail {
                 background-color: #211d1d;
                 color: wheat;
-                box-shadow: $shadow;
+                box-shadow: $dark-shadow;
 
                 .employee-header {
-
-                    .btn {}
+                    background-color: inherit;
+                    color: wheat;
                 }
 
+                .employee-header:hover {
+                    background-color: red;
+                }
+
+                .heading {}
 
                 .field {
-                   
+
 
                     .id {}
 
@@ -85,16 +109,19 @@ body.dark-mode {
             .pending-interview {
                 background-color: #211d1d;
                 color: wheat;
-                box-shadow: $shadow;
+                box-shadow: $dark-shadow;
 
 
 
 
-                .employee-header {}
+                .employee-header {
+                    background-color: inherit;
+                    color: wheat;
+                }
 
                 .field {
 
-                        
+
                     .id {}
 
                     .department {}
@@ -103,6 +130,7 @@ body.dark-mode {
 
                     li {}
                 }
+
                 .field:hover {
                     background-color: rgb(0, 0, 0);
                     scale: 1.04;
@@ -111,4 +139,5 @@ body.dark-mode {
             }
         }
     }
+
 }
