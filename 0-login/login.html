@@ -8,7 +8,7 @@
         <title>Login</title>
     </head>
     <body>
-        <div class="login_form">
+        <div class="login_form" id="login">
             <!-- Login form container -->
             <form action="#">
                 <h3>Log in with</h3>
@@ -57,11 +57,14 @@
                 </div>
                 <!-- Login button -->
                 <button id="btn" type="submit">Log In</button>
-                <p class="sign_up">Don't have an account?
+                <p class="sign_up">
+                    Don't have an account?
                     <a id="sign-up" href="#">Sign up</a>
                 </p>
             </form>
-  <!-- ================================================ -->
+            <!-- ================================================ -->
+        </div>
+        <div class="login_form" id="forget" style="border: 1px solid red;">
             <form action="#">
                 <h3>Forget Password</h3>
                 <div class="login_option">
@@ -70,15 +73,23 @@
                 <div class="input_box">
                     <label for="email">Email</label>
                     <input
-                        type="text" id="emailF"  placeholder="Enter email address" required
+                        type="text"
+                        id="emailF"
+                        placeholder="Enter email address"
+                        required
                     >
                 </div>
                 <!-- Paswwrod input box -->
                 <!-- Login button -->
                 <div id="otpGenerate">
-                  <input type="text" id="otp" placeholder="Enter OTP" maxlength="4" >
-                  <button id="submit-btn" type="submit">Submit </button>
-                  <button id="generate-btn" type="submit">Send OTP</button>
+                    <input
+                        type="text"
+                        id="otp"
+                        placeholder="Enter OTP"
+                        maxlength="4"
+                    >
+                    <button id="submit-btn" type="submit">Submit</button>
+                    <button id="generate-btn" type="submit">Send OTP</button>
                 </div>
             </form>
         </div>

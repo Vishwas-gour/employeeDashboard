@@ -122,7 +122,7 @@ deleteBtn.addEventListener("click", (e) => {
     
     alert("click the member you want to Remove");
     form.addEventListener("click", async (e) => { 
-        let yesNo = confirm("Confirm to remove current Member")
+        let yesNo = confirm("You want to remove current Member")
         if(!yesNo){
           return;
         }
