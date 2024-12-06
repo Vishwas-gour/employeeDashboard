@@ -6,6 +6,23 @@
   font-family: "Varela Round", sans-serif;
 }
 
+#bar_icon {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #bar_icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: block;
+  }
+}
 a {
   text-decoration: none;
   color: black;
@@ -33,11 +50,12 @@ main #side-bar {
   font-weight: 600;
   font-style: normal;
   font-size: 1.1rem;
-  max-height: 100vh;
-  border-right: 3px solid rgb(211, 211, 211);
-  overflow: hidden;
+  height: 100vh;
+  border-right: 1px solid rgb(211, 211, 211);
+  overflow: scroll;
+  scrollbar-width: none;
   width: 4rem;
-  overflow-y: hidden;
+  background-color: white;
   transition: all 0.4s ease;
 }
 main #side-bar img {
@@ -80,14 +98,19 @@ main #side-bar .desh-ul .desh-li a span {
   transition: all 0.3s;
 }
 main #side-bar .desh-ul .desh-li:hover {
-  color: black;
-  background: grey;
+  background: rgb(193, 193, 193);
+}
+main #side-bar #down-arrow {
+  display: none;
+  justify-content: center;
 }
 main #side-bar .logout {
   top: 20rem;
 }
 main #side-bar:hover {
   width: 13rem;
+  overflow: scroll;
+  scrollbar-width: none;
 }
 @media (max-width: 678px) {
   main #side-bar .desh-ul .desh-li {
@@ -104,30 +127,8 @@ main #side-bar:hover {
     width: 15rem;
   }
 }
-@media (max-width: 500px) {
-  main #side-bar {
-    font-size: 0.6rem;
-  }
-  main #side-bar .desh-ul .desh-li {
-    height: 2rem;
-  }
-  main #side-bar .desh-ul .desh-li a {
-    text-align: center;
-  }
-  main #side-bar:hover {
-    width: 9rem;
-  }
-  main #side-bar:hover .desh-ul .desh-li a {
-    margin-left: 0.5rem;
-  }
-  main #side-bar:hover .desh-ul .desh-li a i {
-    font-size: 0.8rem;
-    width: 1rem;
-  }
-  main #side-bar:hover .desh-ul .desh-li a span {
-    font-size: 0.8rem;
-    width: 3.5rem;
-  }
+main .arrow {
+  display: none;
 }
 main #CEO-profile {
   overflow-y: scroll;
@@ -330,7 +331,7 @@ main #CEO-profile #employee .employee-detail .field .more {
   }
 }
 main #CEO-profile #employee .employee-detail .field:hover {
-  background: #bcbcbc;
+  background: #e1e1e1;
   scale: 1.04;
 }
 @media (max-width: 1000px) {
@@ -439,12 +440,31 @@ main #CEO-profile #employee .pending-interview .field .btn:hover {
   }
 }
 main #CEO-profile #employee .pending-interview .field:hover {
-  background: #bcbcbc;
+  background: #e1e1e1;
   scale: 1.04;
 }
 @media (max-width: 1000px) {
   main #CEO-profile .pending-interview {
     width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  #side-bar {
+    width: 10px;
+  }
+  .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 100vh;
+  }
+  #down_arrow {
+    display: none;
+  }
+  #up_arrow {
+    display: flex;
   }
 }
 

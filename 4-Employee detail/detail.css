@@ -14,9 +14,6 @@
 }
 
 main .detail {
-  display: grid;
-  grid-template-columns: auto;
-  justify-content: center;
   overflow: hidden;
 }
 main .detail #crud {
@@ -24,7 +21,7 @@ main .detail #crud {
   grid-template-columns: auto auto auto auto;
   justify-content: center;
   padding: 0.5rem;
-  margin: 1vw;
+  margin: 1rem;
   background: gainsboro;
 }
 main .detail #crud .btn {
@@ -38,24 +35,37 @@ main .detail #employee #form {
   overflow-y: scroll;
   scrollbar-width: none;
 }
-main .detail #employee #form .heading {
-  position: sticky;
-  top: -2.2rem;
+main .detail #employee #form .employee-header {
+  height: fit-content;
+}
+main .detail #employee #form .employee-header li {
+  border-left: 1px solid rgb(205, 205, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .detail #employee #form .field li {
-  margin: 2px;
+  border-left: 1px solid rgb(205, 205, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .detail #employee #form .field li input {
   overflow-x: scroll;
   scrollbar-width: 4px;
   padding: 0.6vw;
   height: 100%;
-  background: rgb(239, 238, 238);
+  background: inherit;
   text-align: center;
-  width: 90%;
+  width: 93%;
   display: flex;
   border: none;
-  border-radius: 10px;
+  font-size: 80%;
+}
+main .detail #employee #form .field li input:focus {
+  outline: 2px solid rgb(129, 129, 129);
+  background-color: white;
+  color: black;
 }
 main .detail #employee #form .field .d_sno {
   width: 10rem;
@@ -76,9 +86,6 @@ main .detail #employee #form .field .d_id {
   main .detail #employee #form {
     height: 45rem;
     padding: 1rem;
-  }
-  main .detail #employee #form .field li {
-    margin-top: 2rem;
   }
   main .detail #employee #form .field li input {
     font-size: 2vw;

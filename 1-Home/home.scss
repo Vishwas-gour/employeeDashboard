@@ -14,6 +14,24 @@ $shadow: 5px 4px 25px 0px rgb(188, 188, 188);
 
 }
 
+#bar_icon {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: none;
+}
+
+@media (max-width:500px) {
+    #bar_icon {
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: block;
+    }
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -27,6 +45,7 @@ a {
     margin-left: 1rem;
     background: $theme-color;
 }
+
 
 
 body {
@@ -44,12 +63,13 @@ main {
         font-weight: 600;
         font-style: normal;
         font-size: 1.1rem;
-        max-height: 100vh;
-        border-right: 3px solid rgb(211, 211, 211);
-        overflow: hidden;
+        height: 100vh;
+        border-right: 1px solid rgb(211, 211, 211);
+        overflow: scroll;
+        scrollbar-width: none;
         width: 4rem;
+        background-color: white;
 
-        overflow-y: hidden;
 
         img {
             display: flex;
@@ -107,13 +127,16 @@ main {
             }
 
             .desh-li:hover {
-                color: black;
-                background: grey;
+                background: rgb(193, 193, 193);
             }
         }
 
-        .logout {
+        #down-arrow {
+            display: none;
+            justify-content: center;
+        }
 
+        .logout {
             top: 20rem;
         }
 
@@ -122,6 +145,8 @@ main {
 
     #side-bar:hover {
         width: 13rem;
+        overflow: scroll;
+        scrollbar-width: none;
     }
 
 
@@ -153,52 +178,54 @@ main {
         }
     }
 
-    @media (max-width:500px) {
-        #side-bar {
-            font-size: 0.6rem;
+    // @media (max-width:500px) {
 
-            .desh-ul {
-                .desh-li {
-                    height: 2rem;
+    //     #side-bar {
+    //         font-size: 0.6rem;
 
-                    a {
-                        text-align: center;
+    //         .desh-ul {
+    //             .desh-li {
+    //                 height: 2rem;
 
-                        i {}
+    //                 a {
+    //                     text-align: center;
 
-                        span {}
-                    }
-                }
-            }
-        }
+    //                     i {}
 
-        #side-bar:hover {
-            width: 9rem;
+    //                     span {}
+    //                 }
+    //             }
+    //         }
+    //     }
 
-            .desh-ul {
-                .desh-li {
-                    a {
-                        margin-left: 0.5rem;
+    //     #side-bar:hover {
+    //         width: 9rem;
 
-                        i {
-                            font-size: 0.8rem;
-                            width: 1rem;
+    //         .desh-ul {
+    //             .desh-li {
+    //                 a {
+    //                     margin-left: 0.5rem;
 
-                        }
+    //                     i {
+    //                         font-size: 0.8rem;
+    //                         width: 1rem;
 
-                        span {
-                            font-size: 0.8rem;
-                            width: 3.5rem;
-                        }
+    //                     }
 
-                    }
-                }
-            }
-        }
+    //                     span {
+    //                         font-size: 0.8rem;
+    //                     }
+
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
+
+    .arrow {
+        display: none;
     }
-
-
-
 
     #CEO-profile {
         overflow-y: scroll;
@@ -304,6 +331,7 @@ main {
                 .container {
                     width: 50vw;
                     height: 19vw;
+
                     .count {
                         font-size: 5vw;
                     }
@@ -319,6 +347,8 @@ main {
 
             }
         }
+
+
 
         // <<<<<<<<<<<<<<<<<<- EMPLOYEE-DETAINS ->>>>>>>>>>>>>>>>
 
@@ -462,7 +492,7 @@ main {
                 }
 
                 .field:hover {
-                    background: #bcbcbc;
+                    background: #e1e1e1;
                     scale: 1.04;
 
                 }
@@ -603,7 +633,7 @@ main {
                 }
 
                 .field:hover {
-                    background: #bcbcbc;
+                    background: #e1e1e1;
                     scale: 1.04;
 
                 }
@@ -616,5 +646,30 @@ main {
             }
         }
 
+    }
+}
+
+@media (max-width:500px) {
+
+    #side-bar {
+        width: 10px;
+
+    }
+
+    .arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+        height: 100vh;
+
+    }
+
+    #down_arrow {
+        display: none;
+    }
+    
+    #up_arrow {
+        display: flex;
     }
 }

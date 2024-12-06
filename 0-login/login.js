@@ -1,12 +1,12 @@
 // localStorage.clear();
-let create = document.querySelector("#login");
+let login = document.querySelector("#login");
 let sign = document.querySelector("#sign-up");
 let forgetPassword = document.querySelector(".forget-password");
 let submitOTP = document.querySelector("#submit-btn");
 let generate = document.querySelector("#generate-btn");
 let otpInput = document.querySelector("#otp");
 let forgetEmail = document.querySelector("#emailF");
-let login = document.querySelector("#login");
+
 let firstName = document.querySelector("#first-name");
 let lastName = document.querySelector("#last-name");
 let forgetPage = document.querySelector("#forget_page");
@@ -27,41 +27,47 @@ forgetPassword.addEventListener("click", () => {
     forgetPage.style.opacity = "1";
 
     generate.addEventListener("click", (e) => {
-        
+
         if (forgetEmail.value != localStorage.email) {
             let Confirm = confirm("You don't have Account, do you want to create");
             window.location.href = "registration.html"
         }
-        
-        generate.style.display = "none";
-        otpInput.style.display = "inline";
-        submitOTP.style.width = "40%";
-        submitOTP.style.display = "block";
 
-        let otp = "";
-        for (let i = 0; i < 4; i++) {
-            otp += Math.trunc(Math.random() * 4);
-        }
-        localStorage.setItem("forgetOtp", otp);
-        console.log(`Do not share OTP to anyone: %c${otp}`, 'color: orange');
-        // <<<<<<<<<--submit-Forget-OTP->>>>>>>>>>>>>>
+        if (firstName.value != localStorage.firstName || lastName.value != localStorage.lastName) {
+            alert("provide infomatin not correct")
+        } else {
 
-        submitOTP.addEventListener("click", (e) => {
-            if (otpInput.value != localStorage.forgetOtp) {
-                alert("Wrong OTP try again");
-                return;
+            generate.style.display = "none";
+            otpInput.style.display = "inline";
+            submitOTP.style.width = "40%";
+            submitOTP.style.display = "block";
+
+            let otp = "";
+            for (let i = 0; i < 4; i++) {
+                otp += Math.trunc(Math.random() * 4);
             }
-            alert(`Your password  is(${localStorage.password})`);
-            loginPage.style.zIndex = "1";
-            loginPage.style.opacity = "1";
 
-            forgetPage.style.zIndex = "0";
-            forgetPage.style.opacity = "0";
-        })
+            localStorage.setItem("forgetOtp", otp);
+            console.log(`Do not share OTP to anyone: %c${otp}`, 'color: orange');
+            // <<<<<<<<<--submit-Forget-OTP->>>>>>>>>>>>>>
+
+            submitOTP.addEventListener("click", (e) => {
+                if (otpInput.value != localStorage.forgetOtp) {
+                    alert("Wrong OTP try again");
+                    return;
+                }
+                alert(`Your password  is(${localStorage.password})`);
+                loginPage.style.zIndex = "1";
+                loginPage.style.opacity = "1";
+
+                forgetPage.style.zIndex = "0";
+                forgetPage.style.opacity = "0";
+            })
+        }
     })
 })
 // =====================================================
-create.addEventListener("click", (e) => {
+login.addEventListener("click", (e) => {
     {
         console.log(e.target)
         e.preventDefault();
@@ -83,9 +89,9 @@ create.addEventListener("click", (e) => {
             if (result) window.location.href = "registration.html";
             else return;
         }
-        else if (email == localStorage.email && password != localStorage.password) { 
-           alert("Wrong password");
-           return;
+        else if (email == localStorage.email && password != localStorage.password) {
+            alert("Wrong password");
+            return;
         }
         else {
             alert("congratulation you are succesfuly log in ")

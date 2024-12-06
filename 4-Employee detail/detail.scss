@@ -21,10 +21,7 @@ $theme-color: rgb(255, 248, 176);
 
 main {
     .detail {
-        // <<<<<<<<<<< CRUD OPRATIONS >>>>>>>>>>>
-        display: grid;
-        grid-template-columns: auto;
-        justify-content: center;
+        // <<<<<<<<<<< CRUD OPRATIONS >>>>>>>>>>
         overflow: hidden;
 
         #crud {
@@ -32,10 +29,11 @@ main {
             grid-template-columns: auto auto auto auto;
             justify-content: center;
             padding: 0.5rem;
-            margin: 1vw;
+            margin: 1rem;
             background: gainsboro;
+
             // background: rgb(138, 26, 26);
-            .btn{
+            .btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -50,26 +48,44 @@ main {
                 overflow-y: scroll;
                 scrollbar-width: none;
 
-                .heading {
-                    position: sticky;
-                    top: -2.2rem;
+                .employee-header {
+                    height: fit-content;
+
+                    li {
+                        border-left: 1px solid rgb(205, 205, 205);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
                 }
 
                 .field {
                     li {
-                        margin: 2px;
+                        border-left: 1px solid rgb(205, 205, 205);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
 
                         input {
+
                             overflow-x: scroll;
                             scrollbar-width: 4px;
                             padding: 0.6vw;
                             height: 100%;
-                            background: rgb(239, 238, 238);
+                            background: inherit;
                             text-align: center;
-                            width: 90%;
+                            width: 93%;
                             display: flex;
                             border: none;
-                            border-radius: 10px;
+                            font-size: 80%;
+                        }
+
+                        
+                        input:focus {
+                            outline: 2px solid rgb(129, 129, 129);
+                           background-color: white;
+                           color: black;
                         }
                     }
 
@@ -90,42 +106,49 @@ main {
     }
 
     @media (max-width : 880px) {
+
         // background-color: rgb(217, 217, 217);
         .detail {
             // <<<<<<<<<<< CRUD OPRATIONS >>>>>>>>>>>
-         
+
 
             #crud {
-             grid-template-columns: auto auto;
+                grid-template-columns: auto auto;
+
                 .btn {
                     font-size: 2.3vw;
                     margin: 1vw;
                     width: 25vw;
                     padding: 1vw;
-                    
+
                 }
             }
+
             #employee {
                 #form {
                     height: 45rem;
                     padding: 1rem;
+
                     .field {
                         li {
-                        margin-top: 2rem;
                             input {
-                               font-size: 2vw;
+                                font-size: 2vw;
                             }
                         }
+
                         .d_sno {
-                          width: 10vw;
+                            width: 10vw;
                         }
+
                         .d_id {
                             width: 15vw;
                         }
-                        .d_name{
+
+                        .d_name {
                             width: 25vw;
                         }
-                        .d_department{
+
+                        .d_department {
                             width: 20vw;
                         }
 

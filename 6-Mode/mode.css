@@ -51,6 +51,10 @@ body.dark-mode #CEO-profile #employee .employee-detail .employee-header {
 body.dark-mode #CEO-profile #employee .employee-detail .employee-header:hover {
   background-color: red;
 }
+body.dark-mode #CEO-profile #employee .employee-detail .field input {
+  background-color: rgb(54, 54, 54);
+  color: wheat;
+}
 body.dark-mode #CEO-profile #employee .employee-detail .field:hover {
   background-color: rgb(0, 0, 0);
   scale: 1.04;
@@ -67,6 +71,13 @@ body.dark-mode #CEO-profile #employee .pending-interview .employee-header {
 body.dark-mode #CEO-profile #employee .pending-interview .field:hover {
   background-color: rgb(0, 0, 0);
   scale: 1.04;
+}
+
+.dark-mode main .detail {
+  overflow: hidden;
+}
+.dark-mode main .detail #crud {
+  background-color: rgb(69, 69, 69);
 }
 
 /*# sourceMappingURL=mode.css.map */

@@ -86,15 +86,10 @@ body.dark-mode {
                 .heading {}
 
                 .field {
-
-
-                    .id {}
-
-                    li {}
-
-                    .more-btn {}
-
-                    .more {}
+                    input {
+                        background-color: rgb(54, 54, 54);
+                        color: wheat;
+                    }
 
                 }
 
@@ -139,5 +134,18 @@ body.dark-mode {
             }
         }
     }
+}
 
+// ===========
+.dark-mode {
+    main {
+        .detail {
+            // <<<<<<<<<<< CRUD OPRATIONS >>>>>>>>>>
+            overflow: hidden;
+
+            #crud {
+                background-color: rgb(69, 69, 69);
+            }
+        }
+    }
 }
