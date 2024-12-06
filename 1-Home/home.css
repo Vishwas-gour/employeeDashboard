@@ -16,7 +16,7 @@ a {
   font-size: 1.2rem;
   padding: 0.5rem 0.5rem;
   margin-left: 1rem;
-  background: rgb(255, 248, 176);
+  background: rgb(255, 244, 126);
 }
 
 body {
@@ -137,7 +137,7 @@ main #CEO-profile {
 }
 main #CEO-profile #company-logo {
   padding: 1rem;
-  background-color: rgb(255, 248, 176);
+  background-color: rgb(255, 244, 126);
   font-size: 4vw;
   text-align: center;
 }
@@ -210,7 +210,16 @@ main #CEO-profile #about-corporation .container:hover {
   }
   main #CEO-profile #about-corporation .container {
     width: 50vw;
-    height: 14vw;
+    height: 19vw;
+  }
+  main #CEO-profile #about-corporation .container .count {
+    font-size: 5vw;
+  }
+  main #CEO-profile #about-corporation .container .type {
+    font-size: 3vw;
+  }
+  main #CEO-profile #about-corporation .container .logo img {
+    height: 15vw;
   }
 }
 main #CEO-profile #employee {
@@ -229,7 +238,7 @@ main #CEO-profile #employee .employee-detail .employee-header {
   justify-content: space-evenly;
   font-size: 2.3vw;
   height: 7vw;
-  background-color: rgb(255, 248, 176);
+  background-color: rgb(255, 244, 126);
   color: rgb(14, 14, 14);
 }
 main #CEO-profile #employee .employee-detail .btn {
@@ -337,7 +346,7 @@ main #CEO-profile #employee .pending-interview {
 main #CEO-profile #employee .pending-interview .employee-header {
   font-size: 2.3vw;
   height: 7vw;
-  background-color: rgb(255, 248, 176);
+  background-color: rgb(255, 244, 126);
   color: rgb(14, 14, 14);
 }
 main #CEO-profile #employee .pending-interview li {

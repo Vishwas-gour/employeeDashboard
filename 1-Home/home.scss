@@ -2,7 +2,7 @@
 
 
 
-$theme-color: rgb(255, 248, 176);
+$theme-color: rgb(255, 244, 126);
 $shadow: 5px 4px 25px 0px rgb(188, 188, 188);
 
 * {
@@ -303,7 +303,18 @@ main {
 
                 .container {
                     width: 50vw;
-                    height: 14vw;
+                    height: 19vw;
+                    .count {
+                        font-size: 5vw;
+                    }
+
+                    .type {
+                        font-size: 3vw;
+                    }
+
+                    .logo img {
+                        height: 15vw;
+                    }
                 }
 
             }
