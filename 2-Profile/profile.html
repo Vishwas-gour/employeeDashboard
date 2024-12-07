@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> Profile</title>
-        <link rel="stylesheet" href="..//1-Home/home.css">
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -12,12 +11,20 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         >
+        <link rel="stylesheet" href="..//1-Home/home.css">
+        <link rel="stylesheet" href="../6-Mode/mode.css">
+        <link rel="stylesheet" href="profile.css">
+        <style>
+            .label{
+                width: 10rem;
+            }
+        </style>
     </head>
-    <body>
+    <body >
         <main>
             <!-- <<<<<<<<<<<<<<-SIDE-BAR->>>>>>>>>>>>>>> -->
             <sideBar id="side-bar">
-                <img src="../Deshboard-images/bird_2.jpg" alt="ugi">
+                <img src="..//Deshboard-images/profile.png" alt="ugi">
                 <ul class="desh-ul">
                     <li class="desh-li">
                         <a href="../index.html">
@@ -38,7 +45,7 @@
                         </a>
                     </li>
                     <li class="desh-li">
-                        <a href="#">
+                        <a href="../8_setting/setting.html">
                             <i class="fas fa-cog"></i>
                             <span>Setting</span>
                         </a>
@@ -57,7 +64,116 @@
                     </li>
                 </ul>
             </sideBar>
-            <article id="CEO-profile"></article>
-    </main>
-</body>
+            <!-- <<<<<<<<<<<<<<- ARROWS (><) ->>>>>>>>>>>>>>> -->
+            <div id="down_arrow" class="arrow">
+                <button>
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+            <div id="up_arrow" class="arrow">
+                <button>
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+            </div>
+            <!-- <<<<<<<<<<<<<<<<- MAIN BODY->>>>>>>>>>>>>>>>> -->
+            <article id="CEO-profile">
+                <div id="company-logo" class="logo">
+                    <samp class="name">Company-Name</samp>
+                    <span class="logo">Logo</span>
+                </div>
+                <!-- <<<<<<<<<<<<<<<<- NOTIFICATIOIN ->>>>>>>>>>>>>>>>> -->
+                <div class="navbar-top">
+                    <ul>
+                        <li>
+                            <a href="#message">
+                                <span class="icon-count">29</span>
+                                <i class="fa fa-envelope fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#notification">
+                                <span class="icon-count">59</span>
+                                <i class="fa fa-bell fa-2x"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../0-login/login.html">
+                                <i class="fa fa-sign-out-alt fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- End -->
+                </div>
+                <!-- End -->
+                <article id="employee">
+                    <!-- <<<<<<<<<<<<<<<<- MY-PORTFOLIO ->>>>>>>>>>>>>>>>> -->
+                    <form id="form" class="employee-detail ">
+                        <ul class="employee-header  field">
+                            <li class="label">
+                                <b>Profile</b>
+                            </li>
+                        </ul>
+                        <ul class="field">
+                            <li class="label">Name</li>
+                            <li class="colon">:</li>
+                            <li class="detail">Vishwas Gour</li>
+                        </ul>
+                        <ul class="field">
+                            <li class="label">Email</li>
+                            <li class="colon">:</li>
+                            <li class="detail">vishwasgour@gmail.com</li>
+                        </ul>
+                        <ul class="field">
+                            <li class="label">Hobbies</li>
+                            <li class="colon">:</li>
+                            <li class="detail">Diving, Reading Book</li>
+                        </ul>
+                        <ul class="field">
+                            <li class="label">Job</li>
+                            <li class="colon">:</li>
+                            <li class="detail">	Web Developer</li>
+                        </ul>
+                        <ul class="field">
+                            <li class="label">Skills</li>
+                            <li class="colon">:</li>
+                            <li class="detail">
+                                HTML, CSS, JavaScript, Java, DSA
+                            </li>
+                        </ul>
+                    </form>
+                </article>
+                <article id="social-media">
+                    <h2>SOCIAL <br>MEDIA</h2>
+                    <div class="card">
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <span class="fa-stack fa-sm">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                        </span>
+
+                    </div>
+                </article>
+            </article>
+        </main>
+        <script src="profile.js"></script>
+    </body>
 </html>

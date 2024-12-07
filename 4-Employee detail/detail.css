@@ -30,7 +30,7 @@ main .detail #crud .btn {
   align-items: center;
 }
 main .detail #employee #form {
-  height: 45rem;
+  height: 34rem;
   padding: 1rem;
   overflow-y: scroll;
   scrollbar-width: none;

@@ -12,9 +12,9 @@ body.dark-mode #side-bar .desh-ul .desh-li a i {
 body.dark-mode #side-bar .desh-ul .desh-li a span {
   color: wheat;
 }
-body.dark-mode #side-bar .desh-li:hover {
+body.dark-mode #side-bar .desh-ul .desh-li:hover {
   color: black;
-  background: rgb(207, 207, 207);
+  background: rgb(79, 79, 79);
 }
 body.dark-mode #CEO-profile #company-logo {
   background-color: rgb(69, 64, 46);

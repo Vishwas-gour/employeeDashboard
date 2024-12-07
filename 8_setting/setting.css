@@ -1,0 +1,12 @@
+#frame{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding: 3rem;
+}
+#frame iframe{
+    margin: 1rem;
+    height: 25vw;
+    width: 30vw;
+    border: 2px solid black;
+}

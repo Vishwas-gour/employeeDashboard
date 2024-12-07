@@ -3,7 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Detail</title>
+        <title>Setting</title>
+        <style>
+        button{
+            height: 100px;
+            width: 100px;
+        }
+        </style>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -11,15 +17,16 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         >
+        <link rel="stylesheet" href="..//6-Mode/mode.css">
         <link rel="stylesheet" href="../1-Home/home.css">
-        <link rel="stylesheet" href="detail.css">
-        <link rel="stylesheet" href="../6-Mode/mode.css">
+        <link rel="stylesheet" href="setting.css">
     </head>
-    <body class="dak-mode">
+    <body>
         <main>
+            <!-- <<<<<<<<<<<<<<-SIDE-BAR->>>>>>>>>>>>>>> -->
             <sideBar id="side-bar">
-                <img src="..//Deshboard-images/profile.png" alt="ugi">
-                <ul class="desh-ul field">
+                <img src="../Deshboard-images/profile.png">
+                <ul class="desh-ul">
                     <li class="desh-li">
                         <a href="../index.html">
                             <i class="fas fa-home"></i>
@@ -28,18 +35,18 @@
                     </li>
                     <li class="desh-li">
                         <a href="..//2-Profile/profile.html">
-                            <i class="fas fa-user"></i>
+                            <i class="fa-regular fa-user"></i>
                             <span>Profile</span>
                         </a>
                     </li>
                     <li class="desh-li">
-                        <a href="..//4-Employee detail/detail.html">
+                        <a href="../4-Employee detail/detail.html">
                             <i class="fas fa-wallet"></i>
                             <span>Members</span>
                         </a>
                     </li>
                     <li class="desh-li">
-                        <a href="..//8_setting/setting.html">
+                        <a href="../8_setting/setting.html">
                             <i class="fas fa-cog"></i>
                             <span>Setting</span>
                         </a>
@@ -69,50 +76,19 @@
                     <i class="fa-solid fa-angle-left"></i>
                 </button>
             </div>
-            <!-- ===============< DETAILS >==================== -->
-            <article id="CEO-profile" class="detail">
+            <article id="CEO-profile">
                 <div id="company-logo" class="logo">
                     <samp class="name">Company-Name</samp>
                     <span class="logo">Logo</span>
                 </div>
-                <!-- ===============< CRUD >==================== -->
-                <article id="crud">
-                    <button id="addBtn" class="btn">
-                        <a href="../5-add employee/add.html">Add Employee</a>
-                    </button>
-                    <button id="updateBtn" class="btn">
-                        <a href="">Update Data</a>
-                    </button>
-                    <button id="deleteBtn" class="btn">
-                        <a href="">Remove Employee</a>
-                    </button>
-                    <button id="saveBtn" class="btn">
-                        <a href="">Save Changes</a>
-                    </button>
-                </article>
-                <article id="employee">
-                    <form id="form" class="employee-detail ">
-                        <ul class="employee-header  field">
-                            <li class="d_sno">
-                                <b>S no.</b>
-                            </li>
-                            <li class="d_id">
-                                <b>Id</b>
-                            </li>
-                            <li class="d_name">
-                                <b>Name</b>
-                            </li>
-                            <li class="d_department">
-                                <b>Department</b>
-                            </li>
-                            <li class="d_salary">
-                                <b>Salary</b>
-                            </li>
-                        </ul>
-                    </form>
-                </article>
+                <button id="toggle"> toggle</button>
+                <div id="frame" >
+                    <iframe src="../index.html" ></iframe>
+                    <iframe src="../2-Profile/profile.html" ></iframe>
+                    <iframe src="../4-Employee detail/detail.html" ></iframe>
+                </div>
             </article>
+            <script src="setting.js"></script>
         </main>
-        <script src="detail.js"></script>
     </body>
 </html>

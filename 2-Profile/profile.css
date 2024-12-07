@@ -1,81 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+
 * {
   margin: 0;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
-  background: #b6fffb;
-}
-body main {
-  display: flex;
-}
-body main #side-bar {
-  text-decoration: none;
-  font-family: "Varela Round", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 1.1rem;
-  background-color: rgb(247, 246, 246);
-  width: 3.8rem;
-  min-height: 100vh;
-  border-right: 3px solid rgb(211, 211, 211);
-  position: sticky;
-  top: 1px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
+  /* background-color: #e8f5ff; ---> <<<<<***THEME COLOER****>>>>> */
+  font-family: Arial;
   overflow: hidden;
-  transition: all 0.4s ease;
-}
-body main #side-bar img {
-  justify-self: center;
-  width: 90%;
-  mix-blend-mode: darken;
-}
-body main #side-bar .desh-ul {
-  padding-left: 1rem;
-  padding: 0.6rem;
-}
-body main #side-bar .desh-ul .desh-li {
-  overflow: hidden;
-  height: 2rem;
-  padding: 1.52rem 0px;
-}
-body main #side-bar .desh-ul .desh-li a {
-  width: 2.3rem;
-  color: rgb(69, 69, 69);
-  text-align: center;
-}
-body main #side-bar .desh-ul .desh-li a i {
-  width: 3rem;
-  transition: all 0.3s;
-}
-body main #side-bar .desh-ul .desh-li a i:hover {
-  font-size: 1.1rem;
-  color: black;
-}
-body main #side-bar .desh-ul .desh-li a span {
-  width: 6rem;
-  position: absolute;
-  left: 4rem;
-  transition: all 0.3s;
-  text-align: left;
-}
-body main #side-bar .desh-ul .desh-li a span:hover {
-  font-size: 1.1rem;
-  color: black;
-}
-body main #side-bar:hover {
-  width: 15rem;
-}
-@media (max-width: 600px) {
-  body main #side-bar {
-    min-width: 62px;
-  }
-  body main #side-bar:hover {
-    width: 3.8rem;
-  }
 }
 
-/*# sourceMappingURL=profile.css.map */
+img{
+  width: 10%;
+}
+#employee{
+  display: flex;
+}
+.navbar-top {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+}
+
+.navbar-top ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: rgb(241, 227, 255);
+  right: 1px;
+  list-style-type: none;
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.navbar-top ul li {
+  width: 4rem;
+  text-align: center;
+}
+
+.navbar-top ul li a {
+  color: #1d1d1d;
+}
+
+.icon-count {
+  border-radius: 50%;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 2px;
+  font-size: 10px;
+
+}
+
+form {
+  width: 50%;
+}
+
+main #CEO-profile #employee .employee-detail .field {
+  margin: 1rem;
+}
+main #CEO-profile #employee .employee-detail .field .label {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 15vw;
+}
+main #CEO-profile #employee .employee-detail .field .colon {
+  padding: 1rem;
+  font-size: 1rem;
+  width: 4px;
+}
+main #CEO-profile #employee .employee-detail .field .detail {
+  font-size: 1rem;
+  padding: 1rem;
+  width: 39vw;
+}
+
+
+body main #CEO-profile{
+  display: f;
+}
+
+/* <<<<<<<<<<<<<-SOCIAL-MEADIA>>>>>>>>>>>>>>>>- */
+body #social-media {
+  border-top: 2px solid rgb(185, 185, 185);
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+body #social-media h2,
+.card {
+  margin: 1rem;
+  text-align: center;
+  color: inherit;
+  font-size: 2vw;
+}
+
+
+#social-media .card span{
+  margin: 1vw;
+}
+
+/* <<<<<<<<<<<<<-SOCIAL-MEADIA-HOVER ->>>>>>>>>>>>>>>>- */
+
+
+.fa-facebook:hover {
+  color: #4267b3 !important;
+}
+
+.fa-twitter:hover {
+  color: #1da1f2 !important;
+}
+
+.fa-instagram:hover {
+  color: #ce2b94 !important;
+}
+
+.fa-invision:hover {
+  color: #f83263 !important;
+}
+
+.fa-github:hover {
+  color: #2200ff !important;
+}
+
+.fa-whatsapp:hover {
+  color: #25d366 !important;
+}
+
+.fa-snapchat:hover {
+  color: #fffb01 !important;
+}
