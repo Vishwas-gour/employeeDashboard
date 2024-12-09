@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Setting</title>
-        <style>
-        </style>
+        <style></style>
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -78,10 +77,19 @@
                     <span class="logo">Logo</span>
                 </div>
                 <button id="toggle"> toggle</button>
-                <div id="frame" >
-                    <iframe src="../index.html" ></iframe>
-                    <iframe src="../2-Profile/profile.html" ></iframe>
-                    <iframe src="../4-Employee detail/detail.html" ></iframe>
+                <div id="frames">
+                    <div id="home" class=" frame">
+                        <h1>Home Page</h1>
+                        <iframe src="../index.html"></iframe>
+                    </div>
+                    <div id="profile" class=" frame">
+                        <h1>Profile Page</h1>
+                        <iframe src="../2-Profile/profile.html"></iframe>
+                    </div>
+                    <div id="detail" class=" frame">
+                        <h1>Member page</h1>
+                        <iframe src="../4-Employee detail/detail.html"></iframe>
+                    </div>
                 </div>
             </article>
             <script src="setting.js"></script>
