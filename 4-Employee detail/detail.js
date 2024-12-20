@@ -69,12 +69,8 @@ updateBtn.addEventListener("click", async (e) => {
     form.addEventListener("click", async (e) => {
         let id = e.target.id
         let parentId = e.target.closest(".field").id;
-        // console.log(parentId)
-
         let urlId = `http://localhost:3000/employee1/${id}`;
-        // console.log("url-id", urlId);
-
-        if (id != `d_department-${parentId}` &&  id != `d_salary-${parentId}`) {
+        if (id != `d_department-${parentId}` && id != `d_salary-${parentId}`) {
             alert("you could only change department and salary");
             return;
         }
@@ -100,13 +96,13 @@ updateBtn.addEventListener("click", async (e) => {
     })
 
 });
-// ------------------------------------------------------------------------------------------------------
+// ----------------------------------------------------------------------------------
 // <<<<<<<<<<<<<<<<<<<< REMOVE MEMBER >>>>>>>>>>>>>>>>>>>> 
 
 async function recDel(id) {
     let urlId = `http://localhost:3000/employee1/${id}`;
-    
- 
+
+
     let responseObj = await fetch(urlId, {
         method: "DELETE",
     });
@@ -119,13 +115,10 @@ async function recDel(id) {
 
 deleteBtn.addEventListener("click", (e) => {
     e.preventDefault()
-    
+
     alert("click the member you want to Remove");
-    form.addEventListener("click", async (e) => { 
+    form.addEventListener("click", async (e) => {
         let yesNo = confirm("You want to remove current Member")
-        if(!yesNo){
-          return;
-        }
         let parentId = e.target.closest(".field").id;
         recDel(parentId);
 
@@ -136,21 +129,17 @@ deleteBtn.addEventListener("click", (e) => {
 let downArrow = document.querySelector("#down_arrow");
 let upArrow = document.querySelector("#up_arrow");
 let sideBar = document.querySelector("#side-bar");
-downArrow.addEventListener("click",()=>{
-  sideBar.style. width = "4rem";
-   downArrow.style.display = "none";
-   upArrow.style.display = "flex";
-
+downArrow.addEventListener("click", () => {
+    sideBar.style.width = "4rem";
+    downArrow.style.display = "none";
+    upArrow.style.display = "flex";
 });
-upArrow.addEventListener("click",()=>{
-    sideBar.style. width = "0";
+
+upArrow.addEventListener("click", () => {
+    sideBar.style.width = "0";
     downArrow.style.display = "flex";
     upArrow.style.display = "none";
-
- });
-
-
- 
+});
 
 // TAKE THEME FROM LOCAL STORAGE AND ADD CLASS NAME
 document.body.className = localStorage.theme;

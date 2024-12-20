@@ -19,7 +19,7 @@ generate.addEventListener("click", async (e) => {
     else if (password !== cnfpsw) {
         // ---> if password && confirm-password not don't match
         alert("Password not match");
-        return;
+        return false;
     }
     else {
         //  <<<<<<<<<<-IF EVERY-THING-IS-FINE ->>>>>>>>>>>
@@ -64,4 +64,4 @@ generate.addEventListener("click", async (e) => {
 
 
 // TAKE THEME FROM LOCAL STORAGE AND ADD CLASS NAME
-document.body.className = localStorage.theme;
+document.body.className = localStorage.getItem("theme") || "";
