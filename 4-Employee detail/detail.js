@@ -87,7 +87,6 @@ updateBtn.addEventListener("click", async (e) => {
                 saveData(parentId);
                 return;
             }
-
         })
         saveBtn.addEventListener("click", (e) => {
             saveData(parentId);
@@ -101,7 +100,6 @@ updateBtn.addEventListener("click", async (e) => {
 
 async function recDel(id) {
     let urlId = `http://localhost:3000/employee1/${id}`;
-
 
     let responseObj = await fetch(urlId, {
         method: "DELETE",
